@@ -4,7 +4,7 @@ class CreateListings < ActiveRecord::Migration[7.0]
       t.integer :price, null: false
       t.integer :bedroom, null: false
       t.integer :bathroom, null: false
-      t.integer :sqft, null: false
+      t.integer :sqmt, null: false
       t.string :address, null: false
       t.string :listing_type, null: false
       t.string :est_payment, null: false
@@ -13,7 +13,7 @@ class CreateListings < ActiveRecord::Migration[7.0]
       t.boolean :heating
       t.boolean :ac
       t.boolean :garage
-      t.integer :price_sqft, null: false
+      t.integer :price_sqmt, null: false
       t.text :overview, null: false
       t.text :key_words, null: false
       t.string :listing_by, null: false

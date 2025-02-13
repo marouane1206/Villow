@@ -32,25 +32,25 @@ const Navigation = ({ isIndex }) => {
     backgroundColor: "rgb(255 255 255)",
   };
 
-
   return (
     <>
       <div className="container">
         <nav id="navigation">
           <div className="grid-item left">
-            <a href="https://github.com/M8825">Github</a>
-            <a href="https://www.linkedin.com/in/malkhaz-mamulashvili-703a97208/">
-              LinkedIn
-            </a>
-            <a href="https://wellfound.com/u/malkhaz-mamulashvili">Wellfound</a>
-            <a href="#">About</a>
+            <a href="https://github.com/marouane1206">Github</a>
+            <a href="https://www.linkedin.com/in/marouane-sanhaji/">LinkedIn</a>
+            <a href="https://marouanesanhaji.netlify.app/">About</a>
           </div>
           <Link to="/">
             <div
               className="grid-item middle"
               style={{ width: "200px", height: "10px" }}
             >
-              <img src={villow} alt="villow" style={{ marginTop: "20px", height: "55px" }} />
+              <img
+                src={villow}
+                alt="villow"
+                style={{ marginTop: "20px", height: "55px" }}
+              />
             </div>
           </Link>
           <div className="grid-item right">
@@ -71,7 +71,7 @@ const Navigation = ({ isIndex }) => {
 
         {!isIndex && (
           <div className="search_container">
-            <h1>Agents. Tours. Loans. Homes</h1>
+            <h1>Acheter - Vendre - Louer. </h1>
             <SearchBar />
           </div>
         )}

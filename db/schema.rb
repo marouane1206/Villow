@@ -55,7 +55,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_11_22_161402) do
     t.integer "price", null: false
     t.integer "bedroom", null: false
     t.integer "bathroom", null: false
-    t.integer "sqft", null: false
+    t.integer "sqmt", null: false
     t.string "address", null: false
     t.string "listing_type", null: false
     t.string "est_payment", null: false
@@ -64,7 +64,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_11_22_161402) do
     t.boolean "heating"
     t.boolean "ac"
     t.boolean "garage"
-    t.float "price_sqft", null: false
+    t.float "price_sqmt", null: false
     t.text "overview", null: false
     t.text "key_words", null: false
     t.integer "views", default: 0

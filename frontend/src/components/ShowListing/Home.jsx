@@ -5,7 +5,7 @@ import {
   Calendar,
   Info,
   HOA,
-  SQFT,
+  SQMT,
   SQFTLOT,
   ZESTIMATE,
 } from "./assets/svgs";
@@ -48,7 +48,7 @@ const Home = ({ listing }) => {
                   <span>{listing.bathroom}</span> baths
                 </p>
                 <p>
-                  <span> {listing.sqft}</span> sqft
+                  <span> {listing.sqmt}</span> sqmt
                 </p>
               </div>
             </div>
@@ -76,9 +76,9 @@ const Home = ({ listing }) => {
                   {<Calendar />}Built in {listing.builtIn}
                 </li>
                 <li>
-                  {<SQFT />} ${listing.sqft}/sqft
+                  {<SQMT />} ${listing.sqmt}/sqmt
                 </li>
-                <li>{<SQFTLOT />} -- sqft lot</li>
+                <li>{<SQFTLOT />} -- sqmt lot</li>
                 <li>{<HOA />} $-- HOA</li>
               </ul>
             </div>

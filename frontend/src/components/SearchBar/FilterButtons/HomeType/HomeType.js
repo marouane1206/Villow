@@ -44,7 +44,7 @@ const HomeType = () => {
     if (excludes && excludes !== excludeHomeType) {
       dispatch(setExcludes(excludeHomeType));
     }
-  }, [excludeHomeType]);
+  }, [dispatch, excludeHomeType, excludes]);
 
   const handleDeselectClick = useCallback(
     (e) => {
@@ -58,7 +58,7 @@ const HomeType = () => {
       }
       dispatch(setExcludes(excludes || []));
     },
-    [deselectAll]
+    [deselectAll, dispatch]
   );
 
   const handleCheckMarkClick = useCallback((e) => {

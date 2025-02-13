@@ -7,7 +7,7 @@
 #  price         :integer          not null
 #  bedroom       :integer          not null
 #  bathroom      :integer          not null
-#  sqft          :integer          not null
+#  sqmt          :integer          not null
 #  address       :string           not null
 #  listing_type  :string           not null
 #  est_payment   :string           not null
@@ -16,7 +16,7 @@
 #  heating       :boolean
 #  ac            :boolean
 #  garage        :boolean
-#  price_sqft    :float            not null
+#  price_sqmt    :float            not null
 #  overview      :text             not null
 #  key_words     :text             not null
 #  views         :integer          default(0)
@@ -129,13 +129,13 @@ class Listing < ApplicationRecord
   validates :price,
             :bedroom,
             :bathroom,
-            :sqft,
+            :sqmt,
             :address,
             :listing_type,
             :est_payment,
             :building_type,
             :built_in,
-            :price_sqft,
+            :price_sqmt,
             :overview,
             :key_words,
             :zipcode,
